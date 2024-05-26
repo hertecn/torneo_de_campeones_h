@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleformulario.css">
+    <title>Torneo de campeones</title>
+</head>
+
+<body>
+
+
+    <img src="../images/LogoApp.png" alt="" id="logoapp2">
+
+
+
+
+
+    <section class="formulario">
+        <h2 class="subtitulo">REGISTRARSE</h2>
+        <form method="post" action="https://formspree.io/f/mzbnoedg" onsubmit="return validarFormulario()">
+
+
+            <div class="datos_contacto">
+                <input type="text" name="Nombre" id="Nombre" maxlength="10"><span class="barra"></span>
+                <label for="Nombre">*Nombre</label>
+
+
+            </div>
+
+
+
+            <div class="datos_contacto">
+                <input type="text" name="Apellido" id="Apellido" maxlength="10"><span class="barra"></span>
+                <label for="Apellido">*Apellido</label>
+
+
+            </div>
+
+
+
+            <div class="datos-opciones">
+                <div class="datos_contacto" id="edad_genero">
+                    <input type="number" name="Edad" id="Edad" maxlength="2"><span class="barra"></span>
+                    <label for="Edad">*Edad</label>
+                </div>
+
+
+                <div class="container-radio">
+                    <div class="radios">
+                        <label for="femenino" id="femenino-label">Femenino</label>
+                        <input type="radio" name="radio1" value="Femenino" id="femenino">
+
+                    </div>
+                    <div class="radios">
+                        <label for="masculino" id="masculino-label">Masculino</label>
+                        <input type="radio" name="radio1" value="Masculino" id="masculino">
+                    </div>
+                    <div class="radios">
+                        <label for="otro" id="otro-label">Otro</label>
+                        <input type="radio" name="radio1" value="Otro" id="otro">
+                    </div>
+                    <!-- <label  for="">Seleciona un genero</label> -->
+                </div>
+
+            </div>
+
+            <div class="datos_contacto">
+                <input type="email" name="Correo_electronico" id="Correo_electronico"><span class="barra"></span>
+                <label for="Correo electronico">*Correo electronico</label>
+            </div>
+
+
+            <div class="botones">
+                <input type="submit" value="Enviar" class="boton_form">
+                <input type="reset" value="Borrar" class="boton_form" id="res">
+            </div>
+
+
+
+
+
+
+
+        </form>
+        <div class="contenedor-obligatorio">
+            <h5>*datos obligatorios</h5>
+        </div>
+
+        <button  id="volver">
+            <a href="../index.html" >Volver</a>
+        </button>
+
+
+        <script src="../js/formulario.js"></script>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
